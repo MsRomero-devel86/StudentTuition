@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <title>Credit Hours Page</title>
+    </h:head>
+    <h:body>
+        <br>Flow ID: #{facesContext.application.flowHandler.currentFlow.id}</br>
+        <h:form prependId="false">
+            The number of Credit Hours: <h:inputText value="#{registrationBean.hours}"/> 
+            Total Tuition: <h:outputText value="#{registrationBean.amount}"/><br/>
+
+
+            <h:commandButton value="Save" action="success"/><br/>
+
+            <h:commandButton value="Back (exit flow)" action="taskFlowReturnIndex"/>  
+    </h:body>
+</html>
